@@ -3,33 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="/src/style.css"> 
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BuscaCep</title>
   </head>
-  <body">
+  <body>
     <main class="container">
-      <form >
+      <form>
         <div class="titulo">
+          <img src="/public/mapa.png" width="30px" height="30px" alt="mapa">
           <h1>Login</h1>
+          <img src="/public/mapa.png" width="30px" height="30px" alt="mapa">
         </div>
-        <div class="input-box">
-          <label>Usuário:</label>
-          <input placeholder="Digite seu email" type="email">
+        
+          <div class="input-box">
+          <input placeholder="Usuário" type="email">
           <i class="bx bxs-user"></i>
         </div>
         <div class="input-box">
-          <label>Senha:</label>
-          <input type="password" placeholder="Digite sua senha">
+          <input type="password" placeholder="Senha">
           <i class="bx bxs-lock-alt"></i>
         </div>
 
-        <div class="remenber-forgot">
-          <label for="">
-            <input type="checkbox">
-            Lembrar minha Senha
-          </label>
-            <a href="#">Esqueci minha senha</a>
+        <div class="remenber">
+            <a href="#">😭Esqueci minha senha</a>
         </div>
 
         <button type="submit">Entrar</button>
