@@ -22,6 +22,7 @@ body {
   border-radius: 12px;
    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   font-family: 'Poppins', sans-serif;
+  
 }
 
 
@@ -51,12 +52,13 @@ body {
   border: 2px solid rgba(0, 102, 204, 0.3);
   border-radius: 40px;
   outline: none;
-  font-size: 16px;
   padding: 20px 45px 20px 20px;
+  
 }
 
 .input-box input::placeholder {
   color: rgba(33, 37, 41, 1);
+   font-size: 16px;
 }
 .input-box i  {
   position: absolute;
@@ -148,3 +150,32 @@ button:hover{
   width: 100%;
 }
 
+@media(max-width: 500px){
+  .container {
+    padding: 22px;
+  }
+  .titulo h1{
+    font-size: 22px;
+  }
+}
+
+@media(max-width: 400px){
+  .container {
+    padding: 18px;
+  }
+  .titulo h1{
+    font-size: 18px;
+  }
+  .titulo img {
+    width: 28px;
+    height: 28px;
+  }
+ 
+  .input-box input::placeholder {
+    font-size: 12px;
+
+
+  }
+  
+
+}
