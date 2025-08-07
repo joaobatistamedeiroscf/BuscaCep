@@ -88,7 +88,7 @@ body {
 }
 
 .input-box label {
-    font-size: 16px;
+    font-size: 15px;
 }
 .input-box input:focus {
       border-color: rgba(26, 26, 26, 0.4);
@@ -124,4 +124,19 @@ body {
      background-color: rgba(26, 26, 26, 0.85);
      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
      transform: translateY(-2px);
+}
+
+
+@media(max-width: 600px){
+  .container {
+    padding: 30px;
+  }
+   .container h1{
+    font-size: 22px;
+  }
+}
+@media(max-width: 400px){
+    .container {
+        padding: auto;
+    }
 }
