@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styleregister.css">
+    <link rel="stylesheet" href="/src/styles/styleregister.css">
     
     <title>Cadastro</title>
 </head>
 <body>
     <main class="container">
+        <header class="cabecalho">
+            <i class='bx bx-arrow-back'></i>
+            <a href="/index.html">Voltar</a>
+        </header>
+        
         <form>
             
             <div class="titulo">
@@ -35,19 +40,20 @@
             </div>
 
             <div class="input-box">
-                <label>Senha</label><br>
+                <label>Senha:</label><br>
                 <input type="password" placeholder="Digite sua senha">
                 <i class='bx bxs-lock-alt'></i>
             </div>
 
             <div class="input-box">
-                <label>Cofirmar senha</label><br>
+                <label>Cofirmar senha:</label><br>
                 <input type="password" placeholder="Confirme sua senha">
                 <i class='bx bxs-lock-open-alt'></i>
             </div>
-                
-            <button type="submit">Cadastrar</button>
             
+            <div class="cadastro">
+                <button type="submit">Cadastrar</button>
+            </div>               
             </form>
         </main>
     
