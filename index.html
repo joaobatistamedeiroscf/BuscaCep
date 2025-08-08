@@ -10,7 +10,8 @@
   </head>
   <body>
     <main class="container">
-      <form>
+      
+      <form id="login-form">
         <div class="titulo">
           <img src="/public/mapa.png" width="30px" height="30px" alt="mapa">
           <h1>Login</h1>
@@ -18,11 +19,11 @@
         </div>
         
         <div class="input-box">
-          <input placeholder="Usuário" type="email">
+          <input id="login-email" placeholder="Usuário" type="email">
           <i class="bx bxs-user"></i>
         </div>
         <div class="input-box">
-          <input type="password" placeholder="Senha">
+          <input id="login-senha" type="password" placeholder="Senha">
           <i class="bx bxs-lock-alt"></i>
         </div>
 
@@ -33,7 +34,7 @@
         <button type="submit">Entrar</button>
 
         <div class="cadastra">
-          <p>Não tem uma conta? <a href="/src/telacadastro.html">Cadastre</a></p>
+          <p>Não tem uma conta? <a href="/src/register.html">Cadastre</a></p>
         </div>
 
       </form>
