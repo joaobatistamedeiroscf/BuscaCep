@@ -25,30 +25,36 @@
             <div class="input-box">
                 <label>Nome completo:</label><br>
                 <input id="register-name" type="name" placeholder="Digite seu nome completo">
+                <p class="mensagem-erro" id="erro-name"></p>
                 <i class='bx bxs-user'></i>
+              
             </div>
 
             <div class="input-box">
                 <label>Email:</label><br>
-                <input id="register-email" type="email" placeholder="Digite seu email">
+                <input id="register-email" type="email" placeholder="Digite seu email" >
+                <p class="mensagem-erro" id="erro-email"></p>
                 <i class='bx bxs-envelope'></i>
             </div>
 
             <div class="input-box">
                 <label>Nascimento:</label><br>
                 <input id="register-nascimento" type="date" placeholder="Digite sua data de nascimento">
+                <p class="mensagem-erro" id="erro-nascimento"></p>
                 <i class='bx bxs-calendar'></i>
             </div>
 
             <div class="input-box">
                 <label>Senha:</label><br>
                 <input id="register-senha" type="password" placeholder="Digite sua senha">
+                <p class="mensagem-erro" id="erro-senha"></p>
                 <i class='bx bxs-lock-alt'></i>
             </div>
 
             <div class="input-box">
                 <label>Cofirmar senha:</label><br>
                 <input id="register-conf-senha" type="password" placeholder="Confirme sua senha">
+                <p class="mensagem-erro" id="erro-conf-senha"></p>
                 <i class='bx bxs-lock-open-alt'></i>
             </div>
             
@@ -57,6 +63,9 @@
             </div>               
             </form>
         </main>
+
+
+<script type="module" src="/src/register.ts"></script>
     
 </body>
 </html>
