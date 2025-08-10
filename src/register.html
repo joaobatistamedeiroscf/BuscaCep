@@ -2,11 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-     <link rel="icon" type="image/png" href="/public/mapa.png" />
+    <link rel="icon" type="image/png" href="/public/mapa.png" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/styleregister.css">
-    
     <title>Cadastro</title>
 </head>
 <body>
@@ -17,7 +16,6 @@
         </header>
         
         <form id="register-form">
-            
             <div class="titulo">
                 <h1>Cadastro de Usuário</h1>
             </div>
@@ -25,47 +23,52 @@
             <div class="input-box">
                 <label>Nome completo:</label><br>
                 <input id="register-name" type="name" placeholder="Digite seu nome completo">
-                <p class="mensagem-erro" id="erro-name"></p>
+                <p class="mensagem-erro hidden" id="erro-name">Mensagem de erro aqui</p>
                 <i class='bx bxs-user'></i>
-              
             </div>
 
             <div class="input-box">
                 <label>Email:</label><br>
-                <input id="register-email" type="email" placeholder="Digite seu email" >
-                <p class="mensagem-erro" id="erro-email"></p>
+                <input id="register-email" type="email" placeholder="Digite seu email">
+                <p class="mensagem-erro hidden" id="erro-email">Mensagem de erro aqui</p>
                 <i class='bx bxs-envelope'></i>
             </div>
 
             <div class="input-box">
                 <label>Nascimento:</label><br>
                 <input id="register-nascimento" type="date" placeholder="Digite sua data de nascimento">
-                <p class="mensagem-erro" id="erro-nascimento"></p>
+                <p class="mensagem-erro hidden" id="erro-nascimento">Mensagem de erro aqui</p>
                 <i class='bx bxs-calendar'></i>
             </div>
 
             <div class="input-box">
                 <label>Senha:</label><br>
-                <input id="register-senha" type="password" placeholder="Digite sua senha">
-                <p class="mensagem-erro" id="erro-senha"></p>
-                <i class='bx bxs-lock-alt'></i>
+                <div class="password-wrapper">
+                    <input id="register-senha" type="password" placeholder="Digite sua senha">
+                    <button type="button" class="toggle-password" data-target="register-senha" aria-label="Mostrar senha">
+                        <i class='bx bxs-lock-alt'></i>
+                    </button>
+                </div>
+                <p class="mensagem-erro hidden" id="erro-senha">Mensagem de erro aqui</p>
             </div>
 
             <div class="input-box">
-                <label>Cofirmar senha:</label><br>
-                <input id="register-conf-senha" type="password" placeholder="Confirme sua senha">
-                <p class="mensagem-erro" id="erro-conf-senha"></p>
-                <i class='bx bxs-lock-open-alt'></i>
+                <label>Confirmar senha:</label><br>
+                <div class="password-wrapper">
+                    <input id="register-conf-senha" type="password" placeholder="Confirme sua senha">
+                    <button type="button" class="toggle-password" data-target="register-conf-senha" aria-label="Mostrar senha">
+                        <i class='bx bxs-lock-alt'></i>
+                    </button>
+                </div>
+                <p class="mensagem-erro hidden" id="erro-conf-senha">Mensagem de erro aqui</p>
             </div>
             
             <div class="cadastro">
                 <button type="submit">Cadastrar</button>
             </div>               
-            </form>
-        </main>
+        </form>
+    </main>
 
-
-<script type="module" src="/src/register.ts"></script>
-    
+    <script type="module" src="/src/register.ts"></script>
 </body>
 </html>

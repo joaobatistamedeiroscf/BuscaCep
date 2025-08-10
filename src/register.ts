@@ -1,6 +1,10 @@
 import { campoVazio, validaNome, validaEmail, validaSenha, confirmaSenha } from "./registervalidation";
+import { initTogglePassword } from "./togglePassword";
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  initTogglePassword(); 
+
   const form = document.getElementById("register-form") as HTMLFormElement;
 
   form.addEventListener("submit", (evento) => {
