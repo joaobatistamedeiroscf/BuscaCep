@@ -1,10 +1,10 @@
 import { initTogglePassword } from "./togglePassword";
 document.addEventListener("DOMContentLoaded", () => {
+  initTogglePassword();
   const form = document.getElementById("login-form") as HTMLFormElement;
 
 
   form.addEventListener("submit", (e) => {
-  initTogglePassword();
   e.preventDefault();
 
     const email = (document.getElementById("login-email") as HTMLInputElement).value.trim();

@@ -13,7 +13,7 @@ export function initTogglePassword(): void {
             const isPassword = input.type === 'password';
             input.type = isPassword ? 'text' : 'password';
 
-            // Troca ícone usando Boxicons
+          
             btn.innerHTML = isPassword 
                 ? "<i class='bx bxs-lock-open-alt '></i>" 
                 : "<i class='bx bxs-lock-alt'></i>";

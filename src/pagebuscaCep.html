@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/public/mapa.png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/src/styles/stylebuscacep.css">
+    <title>BuscaCep</title>
+    <script src="https://unpkg.com/imask"></script>
+</head>
+
+<body>
+    <main class="conteiner">
+        
+        <div class="cabecalho">
+            <i class='bx bx-arrow-back'></i>
+            <a href="/index.html">Voltar</a>
+        </div>
+        
+        <form>
+            
+            <div class="introducao-titulo">
+                <img src="/public/lupa.png"  width="30px" height="30px" alt="imagem de uma lupa">
+                <h1>Busca Cep</h1>
+            </div>
+            
+            <div class="introducao-subtitulo">
+                    <i class='bx bx-map'></i>
+                    <p>Localize endereços de forma rápida usando o CEP</p>
+                    
+                </div>
+                
+            <div class="input-box">
+                <input  id="cep" type="text" placeholder="Digite seu cep">
+                
+            </div>
+            <div class="text-area">
+               
+             </div>
+            
+            <button>Buscar cep</button>
+
+
+        </form>
+    </main>
+
+      <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const input = document.getElementById("cep");
+      if (input) {
+        IMask(input, {
+          mask: "00000-000",
+        });
+      }
+    });
+  </script>
+    
+</body>
+</html>
