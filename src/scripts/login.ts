@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (email === user.email && password === user.password) {
       alert(`Bem-vindo, ${user.name}!`);
-      window.location.href = "/src/buscaCep.html"; 
+      window.location.href = "/src/pages/pagebuscaCep.html"; 
     } else {
       alert("Email ou senha inválidos!");
     }

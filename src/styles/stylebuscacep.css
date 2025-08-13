@@ -27,8 +27,24 @@ body {
 .cabecalho a {
     text-decoration: none;
     color:  rgba(255, 255, 255, 0.95) ;
+    position: relative;
     
 }
+.cabecalho a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(19, 121, 255);
+    transition: width 0.3s ease;
+}
+
+.cabecalho a:hover::after {
+    width: 100%;
+}
+
 .conteiner {
     border: 2px solid rgba(255, 255, 255, 0.2);
     padding: 40px;
@@ -87,18 +103,34 @@ form {
 .input-box input::placeholder {
     color:rgba(0, 0, 0, 0.435); 
 }
-
+.mensagem {
+    position: relative;
+    right: 20px;
+}
+.mensagem p  {
+    font-size: 14px;
+}
+.mensagem-erro {
+    color: hwb(0 100% 0%) ; 
+}
+.hidden {
+    visibility: hidden;
+}
 button {
-    
     margin-top: 20px;
     padding: 15px 14px 15px 14px;
     background-color:rgba(86, 160, 255, 1);
     color: rgba(255, 255, 255, 0.95);
     border: transparent;
     border-radius: 40px;
+    transition: width 0.3s ease;;
 }
 
-
+ button:hover {
+    background-color: rgba(26, 26, 26, 0.85);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
 
 
 

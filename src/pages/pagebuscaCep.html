@@ -18,7 +18,7 @@
             <a href="/index.html">Voltar</a>
         </div>
         
-        <form>
+        <form id="form-busca-cep">
             
             <div class="introducao-titulo">
                 <img src="/public/lupa.png"  width="30px" height="30px" alt="imagem de uma lupa">
@@ -33,7 +33,10 @@
                 
             <div class="input-box">
                 <input  id="cep" type="text" placeholder="Digite seu cep">
-                
+            </div>
+
+            <div class="mensagem">
+              <p class="mensagem-erro hidden">Mensagem de erro</p>
             </div>
             <div class="text-area">
                
@@ -55,6 +58,6 @@
       }
     });
   </script>
-    
+  <script type="module" src="/src/scripts/buscacep.ts"></script>
 </body>
 </html>
