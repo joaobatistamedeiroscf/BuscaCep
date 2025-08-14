@@ -1,4 +1,4 @@
-import { initTogglePassword } from "./togglePassword";
+import { initTogglePassword } from "../shared/togglePassword";
 document.addEventListener("DOMContentLoaded", () => {
   initTogglePassword();
   const form = document.getElementById("login-form") as HTMLFormElement;

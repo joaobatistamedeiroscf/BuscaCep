@@ -1,5 +1,5 @@
 import { campoVazio, validaNome, validaEmail, validaSenha, confirmaSenha } from "./registervalidation";
-import { initTogglePassword } from "./togglePassword";
+import { initTogglePassword } from "../shared/togglePassword";
 
 document.addEventListener("DOMContentLoaded", () => {
 
