@@ -150,7 +150,7 @@ body {
 .cadastro button:hover {
     background-color: rgba(26, 26, 26, 0.85);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
+    transform: translateY(-2px);    
 }
 
 @media(max-width: 600px) {
