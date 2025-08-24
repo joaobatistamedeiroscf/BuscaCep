@@ -15,16 +15,16 @@ Um site simples para **consulta de CEPs**, com autenticação de usuário (login
 ## 📸 Pré-visualização das Telas
 
 ### 🔑 Tela de Login
-![Tela de Login](/public/pagelogin.png)
+![Tela de Login](./public/pagelogin.png)
 
 ### 📝 Tela de Cadastro
-![Tela de Cadastro](/public/pagecadastro.png)
+![Tela de Cadastro](./public/pagecadastro.png)
 
 ### ❓ Tela de Recuperação de Senha
-![Tela de Recuperação](/public/pageforget.png)
+![Tela de Recuperação](./public/pageforget.png)
 
 ### 🏠 Tela de Busca de CEP
-![Tela de BuscaCEP](/public/pagebuscacep.png)
+![Tela de BuscaCEP](./public/pagebuscacep.png)
 
 ---
 
